@@ -12,7 +12,7 @@ En una sesión de terminal de Claude Code, una línea por plugin:
 
 ```
 /plugin install agentes --marketplace KDomingos/claudeby-keyn
-/plugin install subagents-by-difficulty --marketplace KDomingos/claudeby-keyn
+/plugin install delegate-tasks --marketplace KDomingos/claudeby-keyn
 ```
 
 Responde `y` para añadir el marketplace la primera vez y elige un ámbito (el ámbito de usuario hace que funcione en todos los proyectos).
@@ -21,7 +21,7 @@ Desde una shell:
 
 ```bash
 claude plugin install agentes --marketplace KDomingos/claudeby-keyn
-claude plugin install subagents-by-difficulty --marketplace KDomingos/claudeby-keyn
+claude plugin install delegate-tasks --marketplace KDomingos/claudeby-keyn
 ```
 
 En la app de escritorio: pulsa **+** junto al cuadro de texto, luego **Plugins**, **Add marketplace** con `KDomingos/claudeby-keyn` y después **Add plugin**.
@@ -33,7 +33,7 @@ Los mods necesitan una versión reciente de Claude Code.
 | Plugin | Tipo | En una línea |
 |---|---|---|
 | [agentes](#agentes) | Mod | Un panel en vivo con tu sesión, sus tareas y cada subagente: tokens, coste y tiempo |
-| [subagents-by-difficulty](#subagents-by-difficulty) | Skill | Opus planifica y revisa, Sonnet construye, Haiku hace el trabajo rápido y sencillo |
+| [delegate-tasks](#delegate-tasks) | Skill | Opus planifica y revisa, Sonnet construye, Haiku hace el trabajo rápido y sencillo |
 
 ---
 
@@ -65,7 +65,7 @@ Basado en [savvy-progress](https://github.com/johnnyvizz/claude-kit) de johnnyvi
 
 ---
 
-### subagents-by-difficulty
+### delegate-tasks
 
 Un método de trabajo en forma de skill: el modelo principal dirige y cada tarea va al modelo más barato que pueda hacerla bien.
 
@@ -79,7 +79,7 @@ Incluye una regla de tres preguntas para elegir el modelo, una plantilla de enca
 
 **Por qué importa.** Ejecutarlo todo con el modelo más potente es lento y caro; ejecutarlo todo con uno barato rompe cosas. Repartir por dificultad mantiene la calidad donde importa, reduce el coste del trabajo rutinario y mantiene limpio el contexto del líder, que así revisa mejor. Combina bien con **agentes**, que muestra lo que cuesta cada subagente.
 
-Úsalo pidiéndole a Claude que "planifique y delegue" o que "use subagents by difficulty", o con `/subagents-by-difficulty`.
+Úsalo pidiéndole a Claude que "planifique y delegue" o que "delegue las tareas", o con `/delegate-tasks`.
 
 ---
 

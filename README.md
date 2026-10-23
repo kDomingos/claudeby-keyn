@@ -12,7 +12,7 @@ In a Claude Code terminal session, one line per plugin:
 
 ```
 /plugin install agentes --marketplace KDomingos/claudeby-keyn
-/plugin install subagents-by-difficulty --marketplace KDomingos/claudeby-keyn
+/plugin install delegate-tasks --marketplace KDomingos/claudeby-keyn
 ```
 
 Answer `y` to add the marketplace the first time, then pick a scope (user scope makes it work in every project).
@@ -21,7 +21,7 @@ From a shell:
 
 ```bash
 claude plugin install agentes --marketplace KDomingos/claudeby-keyn
-claude plugin install subagents-by-difficulty --marketplace KDomingos/claudeby-keyn
+claude plugin install delegate-tasks --marketplace KDomingos/claudeby-keyn
 ```
 
 In the desktop app: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `KDomingos/claudeby-keyn`, then **Add plugin**.
@@ -33,7 +33,7 @@ Mods need a recent version of Claude Code.
 | Plugin | Type | In one line |
 |---|---|---|
 | [agentes](#agentes) | Mod | A live panel with your session, its tasks and every subagent: tokens, cost and time |
-| [subagents-by-difficulty](#subagents-by-difficulty) | Skill | Opus plans and reviews, Sonnet builds, Haiku does the quick simple work |
+| [delegate-tasks](#delegate-tasks) | Skill | Opus plans and reviews, Sonnet builds, Haiku does the quick simple work |
 
 ---
 
@@ -65,7 +65,7 @@ Based on [savvy-progress](https://github.com/johnnyvizz/claude-kit) by johnnyviz
 
 ---
 
-### subagents-by-difficulty
+### delegate-tasks
 
 A working method as a skill: the main model leads, and each task goes to the cheapest model that can do it well.
 
@@ -79,7 +79,7 @@ It includes a three-question rule to pick the model, a brief template, and the g
 
 **Why it matters.** Running everything on the strongest model is slow and expensive; running everything on a cheap one breaks things. Splitting by difficulty keeps quality where it matters, cuts cost on the routine work, and keeps the lead's context clean so it reviews better. It pairs well with **agentes**, which shows what each subagent costs.
 
-Use it by asking Claude to "plan and delegate" or "use subagents by difficulty", or with `/subagents-by-difficulty`.
+Use it by asking Claude to "plan and delegate" or "delegate the tasks", or with `/delegate-tasks`.
 
 ---
 

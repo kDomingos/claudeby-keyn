@@ -11,8 +11,8 @@
       "category": "mod"
     },
     {
-      "name": "subagents-by-difficulty",
-      "source": "./plugins/subagents-by-difficulty",
+      "name": "delegate-tasks",
+      "source": "./plugins/delegate-tasks",
       "description": "Skill: Opus plans and reviews, Sonnet builds, Haiku handles quick simple work.",
       "version": "0.1.0",
       "category": "skill"

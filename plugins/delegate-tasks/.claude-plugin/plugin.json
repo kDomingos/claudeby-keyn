@@ -1,5 +1,5 @@
 {
-  "name": "subagents-by-difficulty",
+  "name": "delegate-tasks",
   "version": "0.1.0",
   "description": "Skill: Opus only plans, instructs and reviews; Sonnet subagents write all code and tests; Haiku handles quick simple work. The split changes only when the user explicitly names a model.",
   "author": { "name": "KDomingos", "url": "https://github.com/KDomingos" },

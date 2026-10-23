@@ -1,9 +1,9 @@
 ---
-name: subagents-by-difficulty
-description: Split work by difficulty. The main model (Opus) only analyzes, plans, instructs and reviews what matters; every line of code and every test is written by a Sonnet subagent, and quick simple work (reading, searching, extracting) goes to Haiku. Use for any task that changes files or has several steps, when the user asks to save tokens or cost, or says "delegate", "use subagents", "plan and delegate", "subagents by difficulty".
+name: delegate-tasks
+description: Split work by difficulty. The main model (Opus) only analyzes, plans, instructs and reviews what matters; every line of code and every test is written by a Sonnet subagent, and quick simple work (reading, searching, extracting) goes to Haiku. Use for any task that changes files or has several steps, when the user asks to save tokens or cost, or says "delegate", "use subagents", "plan and delegate", "delegate tasks", "subagents by difficulty".
 ---
 
-# Subagents by difficulty
+# Delegate tasks
 
 You are the lead. You think, plan, instruct and review. Subagents do the hands-on work, each on the cheapest model that can do it well. Sonnet costs about half of Opus, so the lead's tokens go only where judgment matters.
 
