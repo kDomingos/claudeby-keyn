@@ -1,0 +1,17 @@
+{
+  "name": "agentes",
+  "version": "0.3.0",
+  "description": "Mod: a progress bar above the prompt and a live agents panel (/agentes). Tracks the current session and every subagent: model, tools, context, tokens, API-price cost and runtime, plus the session's task list. Based on savvy-progress, without needing savvy-flow.",
+  "author": { "name": "KDomingos", "url": "https://github.com/KDomingos" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Panel language",
+      "description": "auto follows Claude Code's language setting, else Spanish",
+      "default": "auto",
+      "options": ["auto", "es", "en", "pt", "ru"]
+    }
+  }
+}
